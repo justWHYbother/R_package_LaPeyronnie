@@ -98,6 +98,7 @@ ggplot(Butterfly, aes(x = SpringTemp, y = Day)) + geom_point(size = 0.5) + geom_
 
 
 ```{r}
+ButterflyTotal<-(merge(Butterfly,Phenology))
 ggplot(ButterflyTotal, aes(x = SummerTemp, y = Day)) + geom_point(size = 0.5) + geom_smooth(method = "lm") + facet_wrap(facets = vars(ButterflySpecies))
 ggplot(ButterflyTotal, aes(x = SpringTemp, y = Day)) + geom_point(size = 0.5) + geom_smooth(method = "lm") + facet_wrap(facets = vars(ButterflySpecies))
 ggplot(ButterflyTotal, aes(x = AnnualTemp, y = Day)) + geom_point(size = 0.5) + geom_smooth(method = "lm") + facet_wrap(facets = vars(ButterflySpecies))
