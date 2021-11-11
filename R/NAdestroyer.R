@@ -1,0 +1,2 @@
+#Input: This code will delete all NA values in my data set and convert any non-normal NA values to an NA (not observed, not found, unavalible, ect...) to an NA value to be omitted.
+#Output: a data set free of missing values

@@ -1,0 +1,2 @@
+#Input: I will be inputting the taxon and min_ma and max_ma
+#Output: This code will spitout 2 bar graphs showing where more ant alive by the earlist they could have lived and the latest they could have lived
