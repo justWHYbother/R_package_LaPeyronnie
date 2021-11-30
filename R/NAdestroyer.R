@@ -10,8 +10,8 @@
 ByeByeNA<-function(SixLegs){
   nonNADataFrame<-read_csv(SixLegs, na = c("None", "NA"))
   nonNADataFrame <- na.omit(nonNADataFrame)
-  return(nonNADataFrame)
-}
-if (!is.na(nonNADataFrame)){
+if (any(is.na(nonNADataFrame)) == TRUE){
   return("Error in data formation")
+}
+  return(nonNADataFrame)
 }
