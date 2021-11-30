@@ -4,8 +4,8 @@
 #'Makes a histogram base on min_ma
 #'@param Ants Is the the dataset
 #'@param min_ma Is the variable column being graphed
-#'@useage
-#'load .csv file as tidyverse (ggplot)
+#'@return A histogram showing the how many ants lived at each minimum age they
+#' could've been alive
 
 AntHistory <- function(Ants, min_ma){
   if (!is.data.frame(Ants)){
