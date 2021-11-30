@@ -1,2 +1,19 @@
-#Input: I will be inputting the taxon and min_ma and max_ma
-#Output: This code will spitout 2 bar graphs showing where more ant alive by the earlist they could have lived and the latest they could have lived
+#Input: I will be inputting the min_age of the ants
+#Output: A histogram that shows the the min_age when most ants were alive
+#'@description
+#'Makes a histogram base on min_ma
+#'@param Ants Is the the dataset
+#'@param min_ma Is the variable column being graphed
+#'@useage
+#'load .csv file as tidyverse (ggplot)
+
+AntHistory <- function(Ants, min_ma){
+  if (!is.data.frame(Ants)){
+    return("Error in data formation")
+ }
+  Histo <- ggplot(Ants, mapping = aes(x = min_ma)) +
+    geom_histogram()
+  return(Histo)
+}
+
+
