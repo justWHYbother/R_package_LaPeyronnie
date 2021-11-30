@@ -2,18 +2,18 @@
 #Output: the number of ants per-genus
 #'@description
 #'Show number of ants for each genus
-#'@param X Is the data set Ants.csv
-#'@param y Is the genus of the Ants
+#'@param Ants Is the data set Ants.csv
+#'@param ColumnGenus Is the genus of the Ants
 #'@return GenusCount The count of ants for each genus
 #'@usage
 #'AntsIn (Ants)
 
-AntsIn<- function(x, y){
+AntsIn<- function(Ants, ColumnGenus){
   if (!is.data.frame(Ants)){
     return("Error in data formation")
   }
-  GenusCount<- x%>%
-    select({{y}})%>%
-    count({{y}})
+  GenusCount<- Ants%>%
+    select({{ColumnGenus}})%>%
+    count({{ColumnGenus}})
   return(GenusCount)
 }
