@@ -6,7 +6,7 @@
 #'@param min_ma Is the variable column being graphed
 #'@return A histogram showing the how many ants lived at each minimum age they
 #' could've been alive
-
+#'@export
 AntHistory <- function(Ants, min_ma){
   if (!is.data.frame(Ants)){
     return("Error in data formation")
