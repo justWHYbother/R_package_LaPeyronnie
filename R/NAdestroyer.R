@@ -5,7 +5,7 @@
 #' @param SixLegs Is Ants the data set being used but must be typed as: 
 #' /cloud/project/Data/Ants.csv
 #' @return non-NADataFrame Is a dataframe with no NAs 
-
+#' @export
 
 ByeByeNA<-function(SixLegs){
   nonNADataFrame<-read_csv(SixLegs, na = c("None", "NA"))
