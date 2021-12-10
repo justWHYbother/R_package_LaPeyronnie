@@ -7,6 +7,7 @@
 #'@return GenusCount The count of ants for each genus
 #'@usage
 #'AntsIn (Ants)
+#'@export
 
 AntsIn<- function(Ants, ColumnGenus){
   if (!is.data.frame(Ants)){
